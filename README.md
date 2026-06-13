@@ -37,30 +37,10 @@ uvicorn main:app --reload
 ```
 
 ---
+## Key Learning Outcomes
 
-## Push to GitHub
-
-```bash
-# ── One-time global config ──────────────────────────────────────────
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-
-# ── Inside your project folder ──────────────────────────────────────
-git init
-git add .
-git commit -m "feat: Real-Time Face Verification API with FastAPI"
-
-# Create a NEW empty repo on github.com (no README, no .gitignore)
-# Then copy its URL and run:
-
-git remote add origin https://github.com/YOUR_USERNAME/face-recognition-api.git
-git branch -M main
-git push -u origin main
-
-# ── Every update after this ─────────────────────────────────────────
-git add .
-git commit -m "describe your change"
-git push
-```
-
-> **Note:** `reference_images/` is gitignored — your reference face photo will never be pushed.
+- Built REST APIs using FastAPI
+- Implemented face verification with DeepFace
+- Used OpenCV for real-time webcam processing
+- Implemented multithreading for non-blocking inference
+- Added exception handling and API validation
